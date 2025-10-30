@@ -51,12 +51,12 @@ public class AuthController {
         }
         // ensure email uniqueness
         if (userService.findByEmail(user.getEmail()).isPresent()) {
-            model.addAttribute("registrationError", "El correo electrónico ya está en uso.");
+            model.addAttribute("registrationError", "Email address is already in use.");
             return "register";
         }
         userService.register(user);
         // after successful registration redirect to login page
-        model.addAttribute("registrationSuccess", "Cuenta creada correctamente. Ahora puedes iniciar sesión.");
+        model.addAttribute("registrationSuccess", "Account created successfully. You can sign in now.");
         return "login";
     }
 

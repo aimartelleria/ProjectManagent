@@ -58,13 +58,13 @@ public class DashboardController {
      */
     private String determineLevel(int totalPoints) {
         if (totalPoints >= 200) {
-            return "Platino";
+            return "Platinum";
         } else if (totalPoints >= 100) {
-            return "Oro";
+            return "Gold";
         } else if (totalPoints >= 50) {
-            return "Plata";
+            return "Silver";
         } else {
-            return "Bronce";
+            return "Bronze";
         }
     }
 }

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 /**
- * Entity representing a single eco‑friendly action logged by a user.
+ * Entity representing a single eco-friendly action logged by a user.
  */
 @Entity
 @Table(name = "eco_actions")

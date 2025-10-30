@@ -11,7 +11,7 @@ import java.util.Set;
 
 /**
  * JPA entity representing an application user.
- * A user can register, log in and log eco‑friendly actions.
+ * A user can register, sign in, and log eco-friendly actions.
  */
 @Entity
 @Table(name = "users")
